@@ -92,11 +92,14 @@ Perform the following on each node:
 1. Download latest etcd bins (Check for latest release at https://github.com/etcd-io/etcd/releases)
 
 ```bash
-curl -L https://github.com/etcd-io/etcd/releases/download/v3.5.7/etcd-v3.5.7-linux-amd64.tar.gz | tar xvz
+export ETCD_RELEASE="3.5.7"
+
+```bash
+curl -L https://github.com/etcd-io/etcd/releases/download/v${ETCD_RELEASE}/etcd-v3${ETCD_RELEASE}-linux-amd64.tar.gz | tar xvz
 ```
 
 ```bash
-cd etcd-v3.5.7-linux-amd64
+cd etcd-v${ETCD_RELEASE}-linux-amd64
 ```
 
 2. Copy etcd bins to /usr/bin
