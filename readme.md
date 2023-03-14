@@ -233,6 +233,7 @@ su <user name>
 ```bash
 etcdctl --endpoints=https://192.168.140.1:2379,https://192.168.140.2:2379,https://192.168.140.3:2379 endpoint status -w table
 ```
+![image](https://user-images.githubusercontent.com/45366367/225124098-85fe1468-ea18-42c9-881b-347a28ef2d82.png)
 
 3. Create and retrieve a key/value
 
