@@ -129,7 +129,7 @@ sudo chown -R etcd:etcd /var/lib/etcd && sudo chown -R etcd:etcd /etc/ssl/etcd
 ```
 
 ```bash
-sudo chmod 700 /var/lib/etcd
+sudo chmod -R 700 /var/lib/etcd
 ```
 
 ```bash
