@@ -82,7 +82,7 @@ sudo cp ca_cert.pem etcd_cert.pem /etc/ssl/etcd/certificate
 sudo cp etcd_key.pem /etc/ssl/etcd/private
 ```
 
-9. Create the same directories on your other two nodes, and SCP the certs to them
+9. Create the same directories on your other two nodes, and SCP the certs and key to them
 
 
 ## Install and Configure etcd
