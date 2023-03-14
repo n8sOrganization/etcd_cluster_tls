@@ -93,6 +93,7 @@ Perform the following on each node:
 
 ```bash
 export ETCD_RELEASE="v3.5.7"
+```
 
 ```bash
 curl -L https://github.com/etcd-io/etcd/releases/download/${ETCD_RELEASE}/etcd-${ETCD_RELEASE}-linux-amd64.tar.gz | tar xvz
