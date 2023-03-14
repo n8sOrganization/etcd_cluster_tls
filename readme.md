@@ -132,11 +132,7 @@ sudo chown -R etcd:etcd /var/lib/etcd && sudo chown -R etcd:etcd /etc/ssl/etcd
 ```
 
 ```bash
-sudo chmod -R 700 /var/lib/etcd
-```
-
-```bash
-sudo chmod -R 550 /etc/ssl/etcd
+sudo chmod -R 700 /var/lib/etcd && sudo chmod -R 550 /etc/ssl/etcd
 ```
    
 5. Create etcd systemd unit file
