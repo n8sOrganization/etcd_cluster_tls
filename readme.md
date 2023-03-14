@@ -2,10 +2,6 @@
 
 This doc walks though installing and configuring a 'semi-secure' etcd cluster. It uses the same self-signed cert and key for all requirements. It is intended for lab use only and is not production grade. This follows from my blog post at https://vrelevant.net/install-etcd-cluster-with-tls/
 
-I previously wrote about [openssl created certificates here](https://vrelevant.net/openssl-self-signed-certs-2023/) . The one addition here is the use of an openssl config file to define requested exensions and saubject alternate names. The file directs openssl to add key usage profiles and subject alternate names (SANs). 
-
-This use of SAN values enables us to match on IP rather than a DNS fqdn. It is required for the way etcd uses TLS between peers and eliminates the need for DNS entries. This would be a bad idea for your bank's web app, but probably ok for etcd running internally. In addition to the config file used while creating the CSR, we need to add `-copy_extensions copy` to the openssl CSR signing command.
-
 ## Create Required Certificates
 
 With three Ubuntu nodes provisioned, from your first node, create a temporary working directory and perform the following commands from that context. At the end of this section, you'll have all of the certs setup on each node and be ready to install etcd on each node.
