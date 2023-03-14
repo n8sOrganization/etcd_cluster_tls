@@ -6,6 +6,8 @@ This doc walks though installing and configuring a 'semi-secure' etcd cluster. I
 
 With three Ubuntu nodes provisioned, from your first node, create a temporary working directory and perform the following commands from that context. At the end of this section, you'll have all of the certs setup on each node and be ready to install etcd on each node.
 
+The etcd.io docs use cfssl bin to create the certificates. I didn't see any glaring reason to download and learn a new tool to do the same thing an existing tool does. So, I used openssl.
+
 1. Create openssl config file (Change the IP addresses to match your needs, but leave
    127.0.0.1):
 
