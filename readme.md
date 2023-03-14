@@ -1,6 +1,6 @@
 # Install and Configure etcd Cluster with TLS
 
-This doc walks though installing and configuring a 'semi-secure' etcd cluster. It uses the same self-signed cert and key for all requirements. It is intended for lab use only and is not production grade. This follows from my blog post at 
+This doc walks though installing and configuring a 'semi-secure' etcd cluster. It uses the same self-signed cert and key for all requirements. It is intended for lab use only and is not production grade. This follows from my blog post at https://vrelevant.net/install-etcd-cluster-with-tls/
 
 I previously wrote about [openssl created certificates here](https://vrelevant.net/openssl-self-signed-certs-2023/) . The one addition here is the use of an openssl config file to define requested exensions and saubject alternate names. The file directs openssl to add key usage profiles and subject alternate names (SANs). 
 
