@@ -164,7 +164,7 @@ WantedBy=multi-user.target
 EOF
 ```
 
-6. Create etcd service config (Change IPs for cluster in first line)
+6. Create etcd service config (Change node names and IPs for cluster in first line to match your needs)
 
 ```bash
 export ETCD_HOST_IP=<current node IP>
@@ -173,7 +173,7 @@ export ETCD_HOST_IP=<current node IP>
 ```console
 cat <<EOF | sudo tee -a /etc/default/etcd
 
-## Set IPs to match the nodes in your cluster
+## Set <node>=<url> for each occurence to match the nodes in your cluster
 ETCD_INITIAL_CLUSTER="etcd-1=https://192.168.140.1:2380,etcd-2=https://192.168.140.2:2380,etcd-3=https://192.168.140.3:2380"
 
 ETCD_NAME="${HOSTNAME}"
