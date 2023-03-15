@@ -4,6 +4,8 @@ This doc walks though installing and configuring a 'semi-secure' etcd cluster. I
 
 This guide uses the 'static' cluster configuration method. For more info on clustering options, review the official docs: https://etcd.io/docs/v3.5/op-guide/clustering/.
 
+It also installs etcd on a base Ubuntu operating system. It could just as well be done with a container image and run on a container host.
+
 ## Create Required Certificates
 
 With three Ubuntu nodes provisioned, from your first node, create a temporary working directory and perform the following commands from that context. At the end of this section, you'll have all of the certs setup on each node and be ready to install etcd on each node.
