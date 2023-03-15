@@ -195,6 +195,7 @@ ETCD_PEER_KEY_FILE="/etc/ssl/etcd/private/etcd_key.pem"
 ETCD_PEER_CLIENT_CERT_AUTH=true
 EOF
 ```
+7. Repeat this section on remaining nodes
 
 ## Enable and Start etcd
 
