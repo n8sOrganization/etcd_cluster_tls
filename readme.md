@@ -199,7 +199,7 @@ EOF
 
 ## Enable and Start etcd
 
-Once all of the nodes have etcd installed and configured, we can enable and start the service on each. They will peer with each other and select a leader.
+Once all of the nodes have etcd installed and configured, we can enable and start the service on each. They will peer with each other and elect a leader.
 
 1. Enable and start etcd service
 
