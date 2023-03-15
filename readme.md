@@ -114,7 +114,7 @@ sudo cp -p etcd etcdctl etcdutl /usr/bin
 3. Create directory for etcd data
 
 ```bash
-sudo mkdir -p /var/lib/etcd/default
+sudo mkdir -p /var/lib/etcd/
 ```
 
 4. Create user account for etcd service and assign directory permissions
@@ -150,7 +150,7 @@ Wants=network-online.target
 
 [Service]
 Environment=ETCD_NAME=%H
-Environment=ETCD_DATA_DIR=/var/lib/etcd/default
+Environment=ETCD_DATA_DIR=/var/lib/etcd
 EnvironmentFile=-/etc/default/etcd
 Type=notify
 User=etcd
