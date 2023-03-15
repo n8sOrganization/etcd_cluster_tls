@@ -2,6 +2,8 @@
 
 This doc walks though installing and configuring a 'semi-secure' etcd cluster. It uses the same self-signed cert and key for all requirements. It is intended for lab use only and is not production grade. This follows from my blog post at https://vrelevant.net/install-etcd-cluster-with-tls/
 
+This guide uses the 'static' cluster configuration method. For more info on clustering options, review teh official docs: https://etcd.io/docs/v3.5/op-guide/clustering/.
+
 ## Create Required Certificates
 
 With three Ubuntu nodes provisioned, from your first node, create a temporary working directory and perform the following commands from that context. At the end of this section, you'll have all of the certs setup on each node and be ready to install etcd on each node.
